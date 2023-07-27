@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .background-container {
+    @apply flex items-center justify-center h-screen bg-zinc-700;
+  }
+  .card {
+    @apply flex items-center justify-center p-3 mx-6 bg-zinc-900 rounded-2xl md:rounded-l-xl md:rounded-r-none;
+  }
+  .container {
+    @apply flex flex-col md:flex-row;
+  }
+  .content-container {
+    @apply p-6 md:p-12;
+  }
+  .email-input {
+    @apply flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0;
+  }
+}
+
+@layer base {
+  img {
+    @apply object-fill rounded-2xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none hover:scale-105 hover:rounded-xl duration-200;
+  }
+  h3 {
+    @apply font-serif text-xl font-medium text-center text-white md:text-left;
+  }
+  p {
+    @apply max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left;
+  }
+  input {
+    @apply bg-transparent border border-zinc-800 outline-1 rounded-lg p-2 px-4 text-white focus:outline-none;
+  }
+  button {
+    @apply bg-green-500 rounded-lg p-2 text-base font-medium text-white md:px-5 hover:bg-green-600 duration-500;
+  }
+}
